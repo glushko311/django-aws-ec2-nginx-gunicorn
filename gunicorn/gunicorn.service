@@ -9,7 +9,7 @@ Group=www-data
 WorkingDirectory=/home/ubuntu/django-aws-ec2-nginx-gunicorn
 ExecStart=/home/ubuntu/django-aws-ec2-nginx-gunicorn/venv/bin/gunicorn \
           --access-logfile - \
-          --workers 3 \
+          --workers 1 \
           --bind unix:/run/gunicorn.sock \
           core.wsgi:application
 [Install]
